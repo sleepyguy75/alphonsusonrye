@@ -1,0 +1,68 @@
+body {
+  background-color: red; /* Temporary, so we know CSS is working */
+  font-family: 'Nunito Sans', sans-serif;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #3b3b6d;
+  color: white;
+  padding: 2rem 1rem 1.5rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #e0e0f0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+.mascot {
+  height: 150px;          
+  width: auto;           
+  position: absolute;    
+  top: 20px;             
+  left: 20px;            
+}
+header {
+  position: relative;    
+  background-color: #3b3b6d;
+  color: white;
+  padding: 2rem 1rem 1.5rem;
+  padding-left: 100px;   
+}
