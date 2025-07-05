@@ -12,20 +12,44 @@ body {
 header {
   background-color: #1a1a1a;
   color: white;
-  padding: 2rem 1rem 1.5rem;
+  padding: 1rem;
+}
+
+/* Image wrapper for layout */
+.image-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  padding-top: 1rem;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  position: relative;
+  background-color: #1a1a1a; /* Ensure dark background */
 }
 
-/* Mascot image */
-.mascot, .new-image {
+/* Sacred Heart on far left */
+.sacred-heart {
+  height: 200px;
+  width: auto;
+  margin-left: 1rem;
+  margin-right: auto;
+  margin-top: -20px;
+}
+
+/* Center content with mascot and title */
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.mascot {
   height: 90px;
   margin-bottom: 1rem;
 }
 
-/* Heading styles */
 h1 {
   margin: 0;
   font-size: 2.5rem;
@@ -42,7 +66,7 @@ h1 {
 nav ul {
   list-style: none;
   padding: 0;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0 0;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
@@ -72,25 +96,23 @@ nav a:hover {
   line-height: 1.6;
 }
 
-/* Footer spacing if needed */
+/* Footer spacing */
 footer {
   margin-top: 2rem;
 }
-.sacred-heart {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  height: 200px; /* large desktop size */
-  width: auto;
-  z-index: 1000;
-  margin-right: 1rem;
-  align-self: flex-start;
-}
 
-/* Mobile adjustments */
+/* Responsive for mobile */
 @media (max-width: 600px) {
-  header {
+  .image-wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
     padding: 1rem;
+    gap: 1rem;
+  }
+
+  .sacred-heart,
+  .mascot {
+    height: 60px;
   }
 
   h1 {
@@ -105,7 +127,6 @@ footer {
   nav ul {
     flex-direction: column;
     gap: 1rem;
-    margin-top: 1rem;
   }
 
   nav a {
@@ -115,21 +136,8 @@ footer {
     margin: 0 auto;
   }
 
-  .mascot, .new-image {
-    height: 60px;
-    margin-bottom: 1rem;
-  }
-
   .container {
     padding: 1rem;
     font-size: 1rem;
-  }
-
-  /* Make sacred-heart smaller on mobile */
-  .sacred-heart {
-    height: 60px;  /* smaller size on mobile */
-    position: static; /* optional: to avoid overlap if needed */
-    margin: 0 auto 1rem auto; /* center with margin bottom */
-    display: block;
   }
 }
