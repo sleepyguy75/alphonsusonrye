@@ -8,6 +8,13 @@ body {
   text-align: center;
 }
 
+/* Remove bullet points and indentation from all lists */
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
 /* Header styles */
 header {
   background-color: #1a1a1a;
