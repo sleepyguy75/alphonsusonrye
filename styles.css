@@ -118,7 +118,8 @@ footer {
   }
 
   .sacred-heart,
-  .mascot {
+  .mascot,
+  .immaculate-heart {
     height: 60px;
   }
 
@@ -147,4 +148,12 @@ footer {
     padding: 1rem;
     font-size: 1rem;
   }
+}
+
+.immaculate-heart {
+  height: 200px;
+  width: auto;
+  margin-right: 1rem;
+  margin-left: auto;
+  margin-top: -20px;
 }
