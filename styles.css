@@ -111,16 +111,27 @@ footer {
 /* Responsive for mobile */
 @media (max-width: 600px) {
   .image-wrapper {
-    flex-direction: row;
+    flex-direction: row;            /* keep horizontal */
     justify-content: flex-start;
     padding: 1rem;
     gap: 1rem;
+    flex-wrap: nowrap;              /* no wrapping */
+    overflow-x: auto;               /* allow horizontal scroll if needed */
   }
 
-  .sacred-heart,
-  .mascot,
-  .immaculate-heart {
+  .sacred-heart {
+    height: 70px;
+    margin: 0;
+  }
+
+  .mascot {
     height: 60px;
+    margin: 0;
+  }
+
+  .immaculate-heart {
+    height: 70px;
+    margin: 0;
   }
 
   h1 {
@@ -150,6 +161,7 @@ footer {
   }
 }
 
+/* Immaculate Heart image styles (desktop) */
 .immaculate-heart {
   height: 200px;
   width: auto;
